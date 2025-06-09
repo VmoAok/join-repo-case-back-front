@@ -74,21 +74,9 @@ bash
 bash
   cd backend-jikicosmeticos
   
-3️⃣ Instale as dependências e inicie a API:
+3️⃣ Execute com Docker - 🐳
+  docker compose up -d
 
-bash
-  mvn clean install
-  mvn spring-boot:run
-  
-4️⃣ Vá para a pasta do frontend:
-bash
-  cd ../node-js-cosmeticos-jiki
-  
-5️⃣ Instale as dependências e inicie o frontend:
-
-bash
-  npm install
-  npm start
 6️⃣ Acesse http://localhost:3000 no navegador! 🎉
 
 📬 Contato Caso tenha dúvidas ou sugestões, entre em contato: 📧 Email: oliveiravmss@gmail.com 🔗 LinkedIn: https://www.linkedin.com/in/vit%C3%B3ria-oliveira-758949159/)
