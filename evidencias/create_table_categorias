@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS db_join.tb_jiki_categorias (
+    id_categoria character varying(10) COLLATE pg_catalog."default" PRIMARY KEY,
+    descricao_categoria character varying(100) COLLATE pg_catalog."default" NOT NULL
+);
