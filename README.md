@@ -3,9 +3,9 @@
 Este repositório contém o backend e frontend do projeto Jiki Skin, uma plataforma para gerenciar pedidos e produtos cosméticos.
   Jiki 
 
- 🏗️ Backend (backend-jikicosmeticos)
+🏗️ Backend (backend-jikicosmeticos)
 
- 🔹 Funcionalidades
+🔹 Funcionalidades
 1. 🔑 Autenticação e Autorização
    - Implementada via JWT, com geração e validação de tokens (`TokenConfig`).  
    - Endpoints de login e registro em `AuthController`.
@@ -30,7 +30,7 @@ Este repositório contém o backend e frontend do projeto Jiki Skin, uma platafo
 7. ✅ Testes Automatizados
    - Testes unitários e de integração (`AuthControllerTest`, `ProductTest`).  
 
- 💻 Frontend (node-js-cosmeticos-jiki)
+💻 Frontend (node-js-cosmeticos-jiki)
 
 🔹 Funcionalidades
 1. 🏠 Página Inicial
@@ -53,7 +53,6 @@ Este repositório contém o backend e frontend do projeto Jiki Skin, uma platafo
 
 7. ⚙️ Configuração de Ambiente
    - Variáveis `.env.local` para configuração.  
-
 
 
 🔗 Como os módulos se conectam?
