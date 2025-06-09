@@ -1,0 +1,11 @@
+-- Table: db_join.tb_jiki_estoque_produtos
+CREATE TABLE IF NOT EXISTS db_join.tb_jiki_estoque_produtos
+(
+    id_cosmetico character varying(20) COLLATE pg_catalog."default" NOT NULL,
+    produto text COLLATE pg_catalog."default",
+    tipo_produto text COLLATE pg_catalog."default",
+    categoria_produto_estoque text COLLATE pg_catalog."default",
+    descricao_produto text COLLATE pg_catalog."default",
+    quantidade integer,
+    CONSTRAINT tb_jiki_estoque_produtos_pkey PRIMARY KEY (id_cosmetico)
+)
