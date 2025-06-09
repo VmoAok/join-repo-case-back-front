@@ -1,0 +1,25 @@
+Regras de Negócio:
+
+    Pedidos:
+      -  Registrar novo pedido (pedido sempre vinculado ao usuário autenticado)
+      -  Remover pedido (ADMIN pode remover qualquer, USER só o próprio)
+
+    Cadastro de Usuários:
+        - Verifique a existência dos dados passados pelo usuário(devem ser unicos): email, cpf.
+            > Para registro de usuario do tipo cliente (requisitados via cadastre-se), gere um valor hash único para cada usuário a partir do cpf.
+            > Caso os valores de email e cpf não exista na tabela de usuários, registre o novo usuário
+            > Atualização de registro: Modificar email, celular solicite update na tabela
+ 
+    Acesso dos usuários -- Regra geral: O sistema valida o token JWT em cada requisição para garantir a segurança para ambos usuários
+        - Para usuários ADMIN, criar uma role identificada por IDUser, verificada na base de funcionários com permissões de: modificar pedidos status (produto ausente, produto esgotado), incluir novos produtos na tabela estoque
+        - Para usuários tipo USER, criar role identificada por IDUser. O acesso deve ser concedido com as informações obrigatórias (email e senha) corretas, considerando a data de modificação. Se o valor bater, conceda acesso. Para permissões de modificar pedidos feitos por este mesmo usuário, a verificação deve ser feita na base de clientes, incluir novo pedido na base de pedidos e cancelar pedido
+Ações:
+        - Botão para cancelar pedido
+        - Botão para adicionar pedido no carrinho de compras 
+        - Botão para registro de usuário
+        - Botão para acessar o site (para usuários já registrados)
+        - Botão apra verificar status de pedido
+        - Compras
+            > Cancelar compras, indicando estorno ao usuário
+            > Para realizar compra, indique opções ded pagamentos: (chave pix, boleto, cartão de crédito) 
+                > Simular solicitação de autorização a empresa de cartão de credito
